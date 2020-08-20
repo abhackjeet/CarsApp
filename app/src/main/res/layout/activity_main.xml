@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+
+</LinearLayout>
+    <!--
+    1. Create a list view in activity main.xml
+    2. Now create a row for list in xml
+    3. Next create a model class
+    3.1 To use values like title of the list items and their description
+    4. Now create an adapter class to create parameters for the list items
+    5. Now create the function under that parameters in adapter class
+
+    -->
