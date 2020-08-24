@@ -17,23 +17,26 @@ class MainActivity : AppCompatActivity() {
 
         var list = mutableListOf<Model>()
 
-        list.add(Model("Koenigsegg", "Koenigsegg Agera R", R.drawable.agera))
+        list.add(Model("Koenigsegg", "Koenigsegg Agera R", R.drawable.agera, "I just love this Supercar"))
 
-        list.add(Model("Bugatti", "Bugatti Cherron", R.drawable.cherron))
+        list.add(Model("Bugatti", "Bugatti Cherron", R.drawable.cherron,"The fastest car in the world"))
 
-        list.add(Model("Lamborghini", "Lamborghini Gallardo", R.drawable.gallardo))
+        list.add(Model("Lamborghini", "Lamborghini Gallardo", R.drawable.gallardo, "Famous in its own category"))
 
-        list.add(Model("Lamborghini", "Lamborghini Veneno", R.drawable.veneno))
+        list.add(Model("Lamborghini", "Lamborghini Veneno", R.drawable.veneno,"Veneno claims the best design award"))
 
-        list.add(Model("Lamborghini", "Lamborghini Terzo Milanio", R.drawable.terzo))
+        list.add(Model("Lamborghini", "Lamborghini Terzo Milanio", R.drawable.terzo, "Terzo milanio yet to come in the market"))
 
 
         listview.adapter= CarAdapter(this, R.layout.row, list)
 
 
+
+
+
         //onclick listener
 
-
+/*
         listview.setOnItemClickListener { parent: AdapterView<*>, view:View, position:Int, id:Long ->
 
 
@@ -68,12 +71,13 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity,  "Terzo milanio yet to come in the market", Toast.LENGTH_LONG).show()
 
             }
+*/
 
 
         }
 
 
     }
-}
+
 
 
