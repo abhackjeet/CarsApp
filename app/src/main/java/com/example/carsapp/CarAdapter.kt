@@ -1,6 +1,7 @@
 package com.example.carsapp
 
 import android.content.Context
+import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +14,8 @@ class CarAdapter (var mCtx:Context, var resources:Int, var items:List<Model>) :A
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val view:View = LayoutInflater.from(mCtx).inflate(resources, null)
         view.setOnClickListener{ Toast.makeText( mCtx, items[position].message, Toast.LENGTH_SHORT).show()}
+
+
         val imageView:ImageView = view.findViewById(R.id.image)
         val titleTextView:TextView = view.findViewById(R.id.textView1)
         val descriptionTextView:TextView = view.findViewById(R.id.textView2)
@@ -26,7 +29,3 @@ class CarAdapter (var mCtx:Context, var resources:Int, var items:List<Model>) :A
     }
 }
 
-//data class
-//a and b onclick a to b
-
-//
